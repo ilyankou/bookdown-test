@@ -1,0 +1,5 @@
+output_dir: "book"
+book_filename: "bookdown-test"
+edit: https://github.com/jackdougherty/bookdown-test/edit/master/%s
+ui:
+    edit: "Edit"

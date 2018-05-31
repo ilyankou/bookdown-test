@@ -1,0 +1,64 @@
+---
+lang: "en"
+title: "Bookdown test"
+subtitle: "subtitle goes here"
+author: "Jack Dougherty and contributors"
+twitter-handle: doughertyjack
+date: "`r Sys.Date()`"
+knit: "bookdown::render_book"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: book.bib
+biblio-style: authortitle
+citation-style: chicago-fullnote-bibliography-no-ibid.csl
+link-citations: true
+
+url: 'http\://jackdougherty.github.io/bookdown-test'
+github-repo: jackdougherty/bookdown-test
+
+output:
+  bookdown::gitbook:
+    dev: svglite
+    css: css/style.css
+    split_by: rmd
+    split_bib: true
+    number_sections: true
+    config:
+      toc:
+        scroll_highlight: yes
+        collapse: section
+        before: |
+            <li><strong><a href="./">Bookdown test</a></strong></li>
+        after: |
+            <li><a href="https://bookdown.org" target="_blank">Published with bookdown</a></li>
+      download: [pdf, epub, mobi]
+      edit:
+        link: https://github.com/jackdougherty/bookdown-test/edit/master/%s
+        text: "Edit on GitHub"
+      search: yes
+      sharing:
+        facebook: yes
+        github: yes
+        twitter: yes
+
+
+  bookdown::pdf_book: default
+
+  bookdown::epub_book:
+    dev: svglite
+    stylesheet: css/style.css
+---
+# About the book {-}
+
+This is a test book
+
+**License**
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+
+
+
+**How to cite**: insert here
+
+All text and code for this book is available on [GitHub](https://github.com/jackdougherty/bookdown-test).  This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.<br>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
