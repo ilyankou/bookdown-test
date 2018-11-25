@@ -31,7 +31,7 @@ output:
             <li><strong><a href="./">Bookdown test</a></strong></li>
         after: |
             <li><a href="https://bookdown.org" target="_blank">Published with bookdown</a></li>
-      download: [pdf, epub, mobi]
+      download: [pdf, epub, mobi, docx]
       edit:
         link: https://github.com/jackdougherty/bookdown-test/edit/master/%s
         text: "Edit on GitHub"
@@ -41,7 +41,6 @@ output:
         github: yes
         twitter: yes
 
-
   bookdown::pdf_book:
     citation_package: none
     pandoc_args: [ "--csl", "chicago-fullnote-bibliography.csl" ]
@@ -50,6 +49,9 @@ output:
     dev: svglite
     stylesheet: css/style.css
     pandoc_args: [ "--csl", "chicago-fullnote-bibliography.csl" ]
+
+  bookdown::word_document2:
+    default
 ---
 # About the book {-}
 
